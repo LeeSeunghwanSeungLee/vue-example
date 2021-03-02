@@ -7,6 +7,22 @@
     <title>Vue.js 개발환경 구출</title>
 </head>
 <body>
-    <div>Hello Vue.js</div>
+    <div id = "app">
+        {{name}}  {{age}}
+    </div>
+    <script>
+        new Vue({
+            el : "#app",
+            data : {
+                name : "seunghwan",
+                age : 28
+            },
+            methods : {
+                nextYear = function(){
+                     this.age++;
+                }
+            }
+        })
+    </script>
 </body>
 </html>
